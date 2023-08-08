@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=League+Spartan&family=REM&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+        <div class="heading">
+            <h2>WEATHER APP</h2>
+        </div>
+
+        <div class="index">
+            <p class="tab" userWeathertab>Your Weather</p>
+            <p class="tab" searchWeathertab>Search Weather</p>
+        </div>
+
+        <!-- grant location tab -->
+        <div class="grant-access sub-container">
+            <img src="location.png" height="50px" width="50px">
+            <p>Grant location access</p>
+            <p>Allow access to get weather information</p>
+            <button class="btn" grantAccess>GRANT ACCESS</button>
+        </div>
+
+        <!-- search weather tab -->
+        <form class="form-container" form-input>
+            <input placeholder="Search for city..." search-form>
+            <button class="search-btn" type="submit">
+                <img src="search.png" width="20px" height="20px">
+            </button>
+        </form>
+
+        <!-- loading tab  -->
+        <div class="loading-container">
+            <img src="loading.png" height="50px" width="50px">
+            <p>Loading...</p>
+        </div>
+
+        <!-- not found tab -->
+<div class="not-found">
+    <img src="404.jpg">
+    <p>Check The Place And Search Again</p>
+</div>
+        <!-- main content -->
+        <div class="content">
+            <!-- <div class="content"> -->
+
+                <div class="city">
+                    <p data-cityName></p>
+                    <img country-logo>
+                </div>
+
+                <div class="desc">
+                    <p desc-weather></p>
+                </div>
+
+                <div class="icon">
+                    <img weather-icon>
+                </div>
+
+                <div class="temp">
+                    <p data-temp></p>
+                </div>
+
+            <!-- </div> -->
+
+            <div class="box">
+                <div class="weather-box">
+                    <img src="wind.png" alt="" height="40px" width="40px" style="filter: brightness(2);">
+                    <h3>Windspeed</h3>
+                    <p data-windspeed></p>
+                </div>
+                <div class="weather-box">
+                    <img src="humidityy.png" alt="" height="40px" width="40px">
+                    <h3>Humidity</h3>
+                    <p data-humidity></p>
+                </div>
+                <div class="weather-box">
+                    <img src="cloud.png" alt="" height="40px" width="40px" style="filter: brightness(1.4);">
+                    <h3>Clouds</h3>
+                    <p data-clouds></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
